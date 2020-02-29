@@ -1,0 +1,17 @@
+import random 
+print("Number guessing game") 
+number = random.randint(1, 20) 
+chances = 0
+print("Guess a number (between 1 and 20):")  
+while chances < 5: 
+    guess = int(input()) 
+    if guess == number: 
+        print("You Guessed it right!") 
+        break
+    elif guess < number: 
+        print("Your guess is a little low")
+    else:
+        print("Your guess is higher") 
+    chances += 1
+if not chances < 5: 
+    print("You are out of chances. The number is ", number)
