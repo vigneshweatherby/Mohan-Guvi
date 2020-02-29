@@ -1,0 +1,5 @@
+while True:
+     check = input("Enter input: ")
+     print(check)
+     if check == 'Q' or check =='quit':
+        break
