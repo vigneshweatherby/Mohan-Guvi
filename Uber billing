@@ -1,0 +1,19 @@
+location=['thiruverkadu','maduravoyal','nerkundram','koyambedu','arumbakkam']
+transport=['Bike','Auto','Mini','Micro','Prime']
+print('Location :' +str(location))
+slocation = input('Enter the source: ')
+source = location.index(slocation)
+
+dlocation = input('Enter the desgination: ')
+designation = location.index(dlocation)
+
+print('Transport_type :' +str(transport))
+transport_type=input('Enter the transport mode: ')
+
+mode=(transport.index(transport_type)+20)
+if(source>=0 and designation>=0 and mode>=0):
+ fare=(source+ designation)*25+mode
+ print('Total fare: ' +str(fare))
+ print('Enjoy your ride!!!')
+else:
+ print('invalid source or destination')
