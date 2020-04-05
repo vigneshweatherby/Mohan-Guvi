@@ -1,0 +1,132 @@
+1. Write a program to find the datatypes of a variable individually
+<script>
+var a = 10;
+var b = 20.5;
+var c = 4.25e+6;
+var d = 4.25e-6;
+var e = true;
+var f = false;
+var g = "Vicky";
+var h = {firstName:"Vignesh", lastName:"Weatherby"}; 
+var i = 16 + "seventeen";
+var j = ["Saab","Volvo","BMW"];
+var k = undefined;
+var l = null; 
+document.write("Type of " + a + " is: " + typeof(a)+"<br>");
+document.write("Type of " + b + " is: " + typeof(b)+"<br>");
+document.write("Type of " + c + " is: " + typeof(c)+"<br>");
+document.write("Type of " + d + " is: " + typeof(d)+"<br>");
+document.write("Type of " + e + " is: " + typeof(e)+"<br>");
+document.write("Type of " + f + " is: " + typeof(f)+"<br>");
+document.write("Type of " + g + " is: " + typeof(g)+"<br>");
+document.write("Type of " + h.firstName + h.lastName + " is: " + typeof(h)+"<br>");
+document.write("Type of " + i + " is: " + typeof(h)+"<br>");
+document.write("Type of " + j + " is: " + typeof(j)+"<br>");
+document.write("Type of " + k + " is: " + typeof(j)+"<br>");
+document.write("Type of " + l + " is: " + typeof(l)+"<br>");
+</script>
+
+2. Convert to javascript object
+var technicalSpecifications [
+dimensions [
+    {
+        overall length : 3500mm,
+        overall width : 1600mm,
+        overall height : 1490mm,
+        wheelbase : 2360mm,
+
+        track width :
+        {
+            front : 1405mm,
+            rear : 1400mm
+        },
+        
+        minimum turning radius : 4.5m,
+        minimum ground clearance : 170mm
+
+    }
+    ],
+    capacities [
+    {
+       seating capacity : "5persons",
+       fuel tank capacity :"35 litres"
+    }
+
+    ],
+    Engine [
+    {
+       type : "kb-series",
+       Number of cylinders : 3,
+       Number of valves : 12,
+       capacity : "998 cc/cm^3"
+       bore x stroke : "73.0 x 79.5mm"
+       compression ratio : "10:1",
+       maiximum power : "67/6.200PS/rpm",
+       maiximum torque : "90/3.500Nm/rpm",
+       fuel injection : "multipoint injection"
+    }
+    ],
+    transmission [
+    {
+        type : "5-speed MT"
+
+    }],
+    chassis [
+    {
+        steering : "Rack and Pinion piston assisted",
+        brakes : {
+            front : "ventilated disks",
+            rear : "drums"
+        },
+        suspension : {
+            front : "macpherson strut and coil spring",
+            rear : "isolated trailing link and coil spring"
+        },
+        shock absorbers : "gas filled",
+        tyre : "155/80R13"
+    }],
+    weights [
+    kerb weight : "860-880 kg",
+    gross vehicle weight : 1320
+    ]
+]
+
+3.
+var library = [
+    {
+        title: "JavaScript",
+        price: 500,
+        readers: [
+            {
+                name: "Person 1",
+                count: 300
+            },
+            {
+                name: "Person 2",
+                count: 400
+            }
+        ],
+        authorDetails: {
+            name: "Raj",
+            age: 40
+        }
+    },
+    {
+        title: "Nodejs",
+        price: 600,
+        readers: [],
+        authorDetails: {
+            name: "Raj",
+            age: 40
+        }
+    }
+]
+
+3A. Print the price of JavaScript book in console
+console.log(library[0].price)
+3B. Print the age Node.js Author in console
+console.log(library[1].authorDetails.age)
+3C. Print how many readers for javascript in console
+console.log(library[0].readers.length)
+3D. Print the count value of Person 2 in console
+console.log(library[0].readers[1].count)
